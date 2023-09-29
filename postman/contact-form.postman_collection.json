@@ -1,0 +1,201 @@
+{
+	"info": {
+		"_postman_id": "1c029990-f124-4dcc-ac72-f0080a4aa442",
+		"name": "contact-form",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get form",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "http://localhost:5000/TripInfo/getTravel",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"TripInfo",
+						"getTravel"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add form",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "busName",
+							"value": "cairo bus",
+							"type": "text"
+						},
+						{
+							"key": "from",
+							"value": "cairo",
+							"type": "text"
+						},
+						{
+							"key": "to",
+							"value": "aswan",
+							"type": "text"
+						},
+						{
+							"key": "ticketPrice",
+							"value": "50",
+							"type": "text"
+						},
+						{
+							"key": "date",
+							"value": "2023-07-24",
+							"type": "text"
+						},
+						{
+							"key": "availableSeats",
+							"value": "20",
+							"type": "text"
+						},
+						{
+							"key": "busImage",
+							"value": "https://images.unsplash.com/photo-1570125909517-53cb21c89ff2",
+							"type": "text"
+						},
+						{
+							"key": "time",
+							"value": "08:25",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/TripInfo/addTrip",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"TripInfo",
+						"addTrip"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update form",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "busName",
+							"value": "bus.bus",
+							"type": "text"
+						},
+						{
+							"key": "from",
+							"value": "cairo",
+							"type": "text"
+						},
+						{
+							"key": "to",
+							"value": "alex",
+							"type": "text"
+						},
+						{
+							"key": "ticketPrice",
+							"value": "50",
+							"type": "text"
+						},
+						{
+							"key": "date",
+							"value": "2023-07-24",
+							"type": "text"
+						},
+						{
+							"key": "availableSeats",
+							"value": "15",
+							"type": "text"
+						},
+						{
+							"key": "busImage",
+							"value": "https://images.unsplash.com/photo-1564694202883-46e7448c1b26?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "53",
+							"type": "text"
+						},
+						{
+							"key": "time",
+							"value": "08:40",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/TripInfo/updateTrip",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"TripInfo",
+						"updateTrip"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete form",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "49",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/TripInfo/deleteTrip",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"TripInfo",
+						"deleteTrip"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
